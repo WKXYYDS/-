@@ -1,0 +1,81 @@
+<view>
+	<!-- 头部 -->
+	<header></header>
+	<!-- 头部下面专业课 -->
+	<banner></banner>
+	<!-- 学画画 正当时 -->
+	<!-- <dkQnPV></dkQnPV> -->
+	<!-- 七大选择 -->
+	<view class="navbar-field_v2212">
+		<swiper display-multiple-items="5.5" style="height: 50rpx;">
+			<block wx:for="{{classification}}" wx:key="index">
+				<swiper-item data-id="{{item.id}}" bindtap="fication" class="{{indexs === item.id? 'fonts fonts-box' : 'fonts-box'}}">
+					{{item.title}}
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<!-- 第二大块 -->
+	<view class="view-box__inner_v2212">
+		<!-- 搜索 -->
+		<view class="filter-box__search_v2212">
+			<view class="icon iconfont icon-sousuo"></view>
+			<input type="text" model:value="{{title}}" bindinput="keywordsChange" placeholder="绘画教程" class="input-kw-form" />
+		</view>
+		<!-- 轮播图 -->
+		<view class="fields-feature__banner_v2212">
+			<image class="course-image" src="https://ss.lanqb.com/{{series[0].picture}}?imageView2/1/w/686/h/274" mode="" />
+		</view>
+		<!-- 满汉全席 -->
+		<view class="filter-main_v2212">
+			<view class="{{lengths == true? 'filter-list' : 'filter-list h198'}}">
+				<view class="{{0 == one? 'filter-item active' : 'filter-item'}}" data-index="0" data-id="0" bindtap="ones">全部</view>
+				<view class="{{index+1 == one? 'filter-item active' : 'filter-item'}}" wx:for="{{course}}" wx:key="index" data-index="{{index+1}}" data-id="{{item.id}}" bindtap="ones">
+					{{item.name}}
+				</view>
+			</view>
+			<button class="filter-btn" bindtap="control">
+				{{lengths == true? '收起' : '更多筛选'}}
+				<view class="{{lengths == true? 'arrow' : ''}}">∨</view>
+			</button>
+		</view>
+		<!-- 教程区 -->
+		<view class="infinite-scroll-disabled">
+			<view class="component-box" wx:for="{{video}}" wx:key="index">
+				<!-- 图 -->
+				<image class="course-item__cover" src="https://ss.lanqb.com/{{item.posters.mobile}}?imageView2/1/w/400/h/300" mode="" />
+				<!-- 字 -->
+				<view class="course-item__detail">
+					<!-- 标题 -->
+					<view class="course-item__detail-title">
+						{{item.title}}
+					</view>
+					<!-- 头像名字 -->
+					<view class="course-item__detail-info">
+						<view class="course-item__detail-info-user">
+							<image class="avatar" src="https://ss.lanqb.com/{{item.profile.avatar}}?imageView2/1/w/45/h/45" mode="" />
+							<view class="nickname">{{item.profile.nickname}}</view>
+						</view>
+						<view class="course-item__detail-info-chapters">
+							共1节
+						</view>
+					</view>
+					<!-- 价格 -->
+					<view class="course-item__detail-others">
+						<view class="study-num">
+							{{item.study_num}}人在学
+						</view>
+						<view class="free-nologin">
+							<view class="price">
+								￥{{item.production.origin_rmb_price}}
+							</view>
+							<view class="wd">
+								登录0元学
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,29 @@
+<view class="header">
+	<view class="header-brand">
+		<image src="../../image/logo05.png" class="header-brand-img" mode="" />
+	</view>
+	<view class="header-brand-box">
+		<image src="../../image/2023year.png" class="header-brand-box-img" mode="" />
+	</view>
+	<view class="header-login">
+		<swiper 
+      class="lun" 
+      autoplay="{{true}}" 
+      interval="{{3000}}" 
+      duration="{{1000}}" 
+      vertical="{{true}}"
+    >
+			<swiper-item>
+				<view>
+					<text class="to_login">登录</text>
+					<text class="to_login">注册</text>
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="has-padding">
+					<image src="../../image/regster-reward_3.png" class="imgss" mode="" />
+				</view>
+			</swiper-item>
+		</swiper>
+	</view>
+</view>

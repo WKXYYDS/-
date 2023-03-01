@@ -1,0 +1,59 @@
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: 'iconfont';  /* Project id 3900348 */
+  src: url('//at.alicdn.com/t/c/font_3900348_vxxnsmjo3xj.woff2?t=1676902113584') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3900348_vxxnsmjo3xj.woff?t=1676902113584') format('woff'),
+       url('//at.alicdn.com/t/c/font_3900348_vxxnsmjo3xj.ttf?t=1676902113584') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sousuo:before {
+  content: "\e651";
+}
+
+.icon-shuben:before {
+  content: "\e625";
+}
+
+.icon-shouye:before {
+  content: "\e6cb";
+}
+
+.icon-wode:before {
+  content: "\e62f";
+}
+
+.icon-diannao:before {
+  content: "\e608";
+}
+
+.icon-diannao1:before {
+  content: "\eac0";
+}
+
+.icon-book:before {
+  content: "\e659";
+}
+
+.icon-wode1:before {
+  content: "\e8bb";
+}
+
+.icon-wode2:before {
+  content: "\e8c6";
+}
+
+.icon-shouye1:before {
+  content: "\e6c7";
+}
+
+.icon-wode3:before {
+  content: "\e6c8";
+}
+

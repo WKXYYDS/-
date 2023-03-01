@@ -1,0 +1,251 @@
+<view class="max">
+	<!-- 黑幕 -->
+	<view class="player-list-mask" style="display:{{isOpen?'block':'none'}}">
+		<view class="act2022-con">
+			<image src="../../image/m1.png" mode="" />
+		</view>
+		<view class="act2022-close" bindtap="changeIsOpen">X</view>
+	</view>
+	<!-- 头部 -->
+	<header></header>
+	<!-- 头部下面专业课 -->
+	<banner></banner>
+	<!-- 学画画 正当时 -->
+	<dkQnPV></dkQnPV>
+	<!-- 轮播图 -->
+	<view class="banners">
+		<swiper class="banners-box" indicator-dots autoplay interval="{{2500}}" duration="{{1000}}">
+			<block wx:for="{{banner}}" wx:key="index">
+				<swiper-item>
+					<view class="banners-one">
+						<image class="banners-image" src="https://ss.lanqb.com/{{item.picture}}" mode="" />
+					</view>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<!-- 八大选项 -->
+	<view class="submenu">
+		<view class="submenu-box">
+			<view class="submenu-small" wx:for="{{icon_list}}" wx:key="index">
+				<view class="submenu-small-box">
+					<image src="https://assets-cdn.lanqb.com/{{item.icon}}" mode="" />
+					<view class="fonts">{{item.text}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 大触直播 -->
+	<view class="m-item">
+		<!-- 直播条 -->
+		<view class="m-title">
+			<text class="m-text-one">大触直播</text>
+			<text class="m-text-two">查看更多></text>
+		</view>
+		<!-- 直播区 -->
+		<view class="d-courses-list">
+			<view class="courses-item">
+				<!-- 小圆头像与名称 -->
+				<view class="courses-auther">
+					<image class="cover" src="https://ss.lanqb.com/{{daniu[0].profile.avatar}}?imageView2/1/w/60/h/60" mode="" />
+					<text class="name">{{daniu[0].profile.nickname}}</text>
+				</view>
+				<!-- 标题 -->
+				<view class="courses-h4">
+					<text>{{daniu[0].production.title}}</text>
+				</view>
+				<!-- 视频 -->
+				<view class="courses-cover">
+					<view class="zhibo"> 即将直播 </view>
+					<view class="period"> 第486期 </view>
+					<!-- 还差一个视频 -->
+				</view>
+				<!-- 时间 和 点赞 -->
+				<view class="courses-date">
+					<text class="courses-date-one">时间：{{daniu[0].begin_at}}</text>
+					<view class="courses-date-two">
+						<text class="courses-date-two-one">{{daniu[0].statistic.purchases}}</text>
+						<text class="courses-date-two-two">人感兴趣</text>
+					</view>
+				</view>
+			</view>
+			<!-- 两小块 -->
+			<view class="courses-n2">
+				<!-- 小圆头像与名称 -->
+				<view class="courses-auther">
+					<image class="cover" src="https://ss.lanqb.com/{{danius[1].user_profile.avatar}}?imageView2/1/w/60/h/60" mode="" />
+					<text class="name">{{danius[1].user_profile.nickname}}</text>
+				</view>
+				<!-- 标题 -->
+				<view class="courses-h4">
+					<text>{{danius[1].title}}</text>
+				</view>
+				<!-- 视频 -->
+				<view class="courses-cover">
+					<view class="period"> 第486期 </view>
+					<!-- 还差一个视频 -->
+				</view>
+				<!-- 时间 和 点赞 -->
+				<view class="courses-date">
+					<text class="courses-date-one">时间：{{danius[1].begin_at}}</text>
+					<view class="courses-date-two">
+						<text class="courses-date-two-one">♥</text>
+						<text class="courses-date-two-two">{{danius[1].statistic.purchases}}</text>
+					</view>
+				</view>
+			</view>
+			<view class="courses-n2 n3">
+				<!-- 小圆头像与名称 -->
+				<view class="courses-auther">
+					<image class="cover" src="https://ss.lanqb.com/{{danius[0].user_profile.avatar}}?imageView2/1/w/60/h/60" mode="" />
+					<text class="name">{{danius[0].user_profile.nickname}}</text>
+				</view>
+				<!-- 标题 -->
+				<view class="courses-h4">
+					<text>{{danius[0].title}}</text>
+				</view>
+				<!-- 视频 -->
+				<view class="courses-cover">
+					<view class="period"> 第486期 </view>
+					<!-- 还差一个视频 -->
+				</view>
+				<!-- 时间 和 点赞 -->
+				<view class="courses-date">
+					<text class="courses-date-one">时间：{{danius[0].begin_at}}</text>
+					<view class="courses-date-two">
+						<text class="courses-date-two-one">♥</text>
+						<text class="courses-date-two-two">{{danius[0].statistic.purchases}}</text>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 热门教程 -->
+	<view class="m-item">
+		<!-- 教程条 -->
+		<view class="m-title">
+			<text class="m-text-one">热门教程</text>
+			<text class="m-text-two">查看更多></text>
+		</view>
+		<!-- 教程区 -->
+		<view class="clearfix">
+			<view class="touchShadow" wx:for="{{course}}" wx:key="index">
+				<view class="touchShadow-img">
+					<image class="touchShadow-image" src="https://ss.lanqb.com/{{item.posters.mobile}}" mode="" />
+				</view>
+				<text class="touchShadow-font">{{item.title}}</text>
+			</view>
+		</view>
+	</view>
+	<!-- 问答专区 -->
+	<view class="m-item">
+		<!-- 问答条 -->
+		<view class="m-title">
+			<text class="m-text-one">问答专区</text>
+			<text class="m-text-two">查看更多></text>
+		</view>
+		<!-- 问答区 -->
+		<view class="clearfix-two" wx:if="{{index < 4}}" wx:for="{{qaList}}" wx:key="index">
+			<view class="item-qa">
+				<!-- 头像与名称 -->
+				<view class="user-info">
+					<image class="avatar" src="{{item.user_avatar}}" mode="" />
+					<text>{{item.user_nickname}}</text>
+				</view>
+				<!-- 问题与相关图片 -->
+				<view class="content">
+					<view>
+						<view class="content-one">问</view>
+						<view class="content-two">{{item.title}}</view>
+					</view>
+					<view class="qa-detail">
+						<view class="qa-content">
+							{{item.content}}
+						</view>
+						<view class="qa-cover">
+							<image class="qa-cover-one" src="{{item.works[0]}}" alt="" />
+						</view>
+					</view>
+					<!-- 作者回复 -->
+					<view class="teacher-comment">
+						<!-- 作者信息 -->
+						<view class="teacher-info">
+							<view class="left">
+								<image class="t-avatar" src="{{item.answer_user_avatar}}" mode="" />
+								<text class="t-nickname">{{item.answer_user_nickname}}</text>
+								<text class="t-adopted_qa">{{item.answer_user_nickname != '此号已弃' ? '已采纳' : '此号已弃'}}</text>
+							</view>
+						</view>
+						<!-- 作者的真.回复 -->
+						<view class="t-content">
+							{{item.answer_content[0].value}}
+							<text class="">APP内查看</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 素材下载 -->
+	<view class="m-item">
+		<!-- 素材条 -->
+		<view class="m-title">
+			<text class="m-text-one">素材下载</text>
+			<text class="m-text-two">查看更多></text>
+		</view>
+		<!-- 素材区 -->
+		<view class="m-con">
+			<view class="news-list-item" wx:if="{{index < 3}}" wx:for="{{news}}" wx:key="index">
+				<view class="list04-item">
+					<!-- 图片 -->
+					<view class="list04-img">
+						<image class="list04-img-image" src="https://ss.lanqb.com/{{item.imgCover}}" mode="" />
+					</view>
+					<!-- 文字 -->
+					<view class="list04-con">
+						<view class="list04-con-font">
+							{{item.title}}
+						</view>
+						<view class="list04-p1">
+							{{item.created_at}}
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 收尾	 -->
+	<view class="m-about">
+		<view class="about-a">关于蓝铅笔</view>
+		<!-- 五个网站 -->
+		<view class="m-credible">
+			<view class="m-credible-item">
+				<image class="m-credible-item-image" src="https://assets-cdn.lanqb.com/image/footer/footer-icon1_124x47.png" mode="" />
+			</view>
+			<view class="m-credible-item">
+				<image class="m-credible-item-image" src="https://assets-cdn.lanqb.com/image/footer/footer-icon5@2x.png" mode="" />
+			</view>
+			<view class="m-credible-item">
+				<image class="m-credible-item-image" src="https://assets-cdn.lanqb.com/image/footer/footer-icon2@2x.png" mode="" />
+			</view>
+			<view class="m-credible-item">
+				<image class="m-credible-item-image" src="https://assets-cdn.lanqb.com/image/footer/footer-icon3@2x.png" mode="" />
+			</view>
+			<view class="m-credible-item">
+				<image class="m-credible-item-image" src="https://xyt.xcc.cn/img/icon/icon8.png" mode="" />
+			</view>
+		</view>
+		<!--  -->
+		<view class="m-about-p">
+			<text>Copyright © 2022杭州多技教育科技有限公司</text>
+			<text style="margin-left: 10rpx;">浙ICP备11056181号</text>
+		</view>
+		<!--  -->
+		<view style="margin-top: 15rpx; font-size: 20rpx;">
+			<view>
+				<image class="regulation" src="https://assets-cdn.lanqb.com/image/footer/footer-icon4@2x.png" mode=""/>
+				浙公网安备33010602000717号
+			</view>
+		</view>
+	</view>
+</view>

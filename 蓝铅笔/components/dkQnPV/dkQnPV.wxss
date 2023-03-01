@@ -1,0 +1,10 @@
+.one .zheng {
+  width: 130rpx;
+  height: 140rpx;
+  z-index: 401;
+  position: fixed;
+  top: 190rpx;
+  left: 300rpx;
+  background-image: url(https://tenant-assets.meiqiausercontent.com/widget/18996/zgag/zy0V1Utj4Sf27IreWeN8.png);
+  background-size: 100% 100%;
+}

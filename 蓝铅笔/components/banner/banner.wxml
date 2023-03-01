@@ -1,0 +1,7 @@
+<view>
+	<view class="banner">
+		<image src="../../image/m-ht.png" class="imgs" mode=""/>
+		<button class="ctn">
+		</button>
+	</view>
+</view>
