@@ -17,5 +17,20 @@ module.exports = {
 	// 教程选购区
 	video: baseurl + "/course/video",
 	// 各种选择 的选购区
-	classify: baseurl + "/course/video?is_free=Y&page=1&limit=10&course_subjects_ids=122"
+	classify: baseurl + "/course/video?is_free=Y&page=1&limit=10&course_subjects_ids=122",
+	// 网校
+	// 网路=>小轮播图
+	smallBanner: baseurl + "/home/banner?type=m&local_code=20&limit=6&order=weight",
+	// 热门课程推荐
+	hotClass: baseurl + "/school/professionals?limit=4&teacher_show=1",
+	// 网校页主讲大咖
+	zhujiang: baseurl + "/school/teacher?limit=3",
+	// 学院作品展会
+	stuShow: baseurl + "/school/works?sort=-top_weight&limit=9",
+	// 大触页面
+	zb: baseurl + "/daniu?link=paging&live=3&heat=N&page=1",
+	// 大触专访
+	zf: baseurl + "/daniu/interview?link=paging&type=interview",
+	// 热门大触
+	remen: baseurl + "/daniu/lists",
 }

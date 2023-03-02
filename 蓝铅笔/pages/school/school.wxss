@@ -1,0 +1,481 @@
+.all {
+	width: 100%;
+	height: 100vh;
+}
+
+.d_imgBox {
+	width: 100%;
+	height: 350rpx;
+	background-image: url("https://assets-cdn.lanqb.com/imgv3_m/shome2211/shb-bg.png");
+	background-size: 100%;
+	padding: 20rpx;
+	box-sizing: border-box;
+}
+
+.d_imgBoxOne {
+	width: 100%;
+	height: 200rpx;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-item {
+	width: 45%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.card-item image {
+	width: 100%;
+	height: 100%;
+}
+
+.d_imgBoxTwo {
+	margin-top: 20rpx;
+	width: 100%;
+	height: 90rpx;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-items {
+	width: 45%;
+	height: 100%;
+
+}
+
+.card-items image {
+	width: 100%;
+	height: 100%;
+}
+
+.but_lists {
+	width: 100%;
+	margin-top: 25rpx;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.text_boxs {
+	width: 180rpx;
+	height: 180rpx;
+	margin-bottom: 20rpx;
+}
+
+.item_boxs {
+	margin: 0 auto;
+	margin-top: 10rpx;
+	width: 120rpx;
+	height: 120rpx;
+}
+
+.item_boxs .image_item,
+.item_boxs .img_big {
+	width: 100%;
+	height: 100%;
+}
+
+.text_item {
+	padding: 0rpx 1rpx;
+	color: #222;
+	text-align: center;
+	font-size: 29rpx;
+}
+
+.hot_tuijian {
+	width: 100%;
+	padding: 30rpx 15px;
+	box-sizing: border-box;
+}
+
+.hot_oneBox {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.left_box {
+	width: 50%;
+	height: 450rpx;
+	border-radius: 10rpx;
+	overflow: hidden;
+}
+
+.right_box {
+	width: 46%;
+	height: 450rpx;
+}
+
+.img_swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.img_item image {
+	width: 100%;
+	height: 100%;
+}
+
+.right_tit {
+	width: 70%;
+	height: 70rpx;
+	display: flex;
+	margin-bottom: 10rpx;
+}
+
+.right_tit image {
+	margin-top: 10rpx;
+	width: 50rpx;
+	height: 50rpx;
+}
+
+.hot_tuj {
+	height: 70rpx;
+	line-height: 70rpx;
+	font-size: 35rpx;
+	margin-left: 10rpx;
+}
+
+.cont {
+	width: 95%;
+	height: 50rpx;
+	line-height: 50rpx;
+	font-size: 25rpx;
+	text-align: left;
+	background-color: #f6f8fa;
+	margin: 0 auto;
+	margin-bottom: 20rpx;
+	padding-left: 20rpx;
+	color: #87959f;
+	border-radius: 10rpx;
+}
+
+.hot_twoBox {
+	margin-top: 30rpx;
+	width: 100%;
+}
+
+.tit_box {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.more {
+	line-height: 70rpx;
+	color: #a4a4a4;
+}
+
+.course-list {
+	margin-top: 40rpx;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.course-listBox {
+	width: 48%;
+	height: 400rpx;
+	margin-bottom: 35rpx;
+}
+
+.img_boxImg {
+	width: 100%;
+	height: 250rpx;
+	border-radius: 15rpx;
+	overflow: hidden;
+}
+
+.img_boxImg image {
+	width: 100%;
+	height: 100%;
+}
+
+.text_box {
+	width: 100%;
+	height: 40rpx;
+	margin-top: 20rpx;
+	display: flex;
+
+}
+
+.text_box image {
+	width: 120rpx;
+	height: 40rpx;
+}
+
+.tite_con {
+	margin-left: 15rpx;
+	font-size: 25rpx;
+	width: 250rpx;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.auther {
+	margin-top: 15rpx;
+	width: 9 0%;
+	height: 45rpx;
+	display: flex;
+
+}
+
+.aunt_box {
+	width: 120rpx;
+	display: flex;
+
+}
+
+.auther image {
+	width: 45rpx;
+	height: 45rpx;
+	border-radius: 50%;
+	margin-left: 5rpx;
+}
+
+.Horizontal {
+	width: 100%;
+	height: 30rpx;
+	background-color: #F4F4F4;
+}
+
+.auth_name {
+	width: 50rpx;
+	margin-left: 10rpx;
+	height: 45rpx;
+	line-height: 45rpx;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 25rpx;
+}
+
+.dibu_tetx {
+	margin-top: 6rpx;
+	width: 100%;
+	height: 30rpx;
+	display: flex;
+	justify-content: space-between;
+}
+
+.one_text,
+.two_text {
+	height: 30rpx;
+	line-height: 30rpx;
+	font-size: 23rpx;
+}
+
+.two_text {
+	display: flex;
+}
+
+.num_people {
+	color: #ff5900;
+}
+
+.teacher_know {
+	width: 100%;
+	padding: 30rpx 15px;
+	box-sizing: border-box;
+}
+
+.teacher_tit {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: .026667rem solid #e6e6e6;
+}
+
+.teacher_tit {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: .026667rem solid #e6e6e6;
+}
+
+.teache_list {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.teacher_box {
+	width: 30%;
+	height: 200rpx;
+	margin-top: 30rpx;
+}
+
+.teacher_box_img {
+	width: 130rpx;
+	height: 130rpx;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.teacher_box_img image {
+	width: 130rpx;
+	height: 130rpx;
+	border: 50%;
+}
+
+.text_teach {
+	margin-top: 7rpx;
+	width: 100%;
+	height: 30rpx;
+	line-height: 30rpx;
+	text-align: center;
+	font-size: 25rpx;
+}
+
+.color_yer {
+	color: #a4a4a4;
+}
+
+.stu_show {
+	padding: 20rpx 5rpx 10rpx 20rpx;
+}
+
+.stu_box {
+	display: inline-block;
+	position: relative;
+	width: 200rpx;
+	height: 250rpx;
+	margin-right: 25rpx;
+	margin-bottom: 15rpx;
+}
+
+.stu_box image {
+	width: 100%;
+	height: 100%;
+	border-radius: 15rpx;
+}
+
+.stu_tit {
+	width: 80%;
+	top: 20rpx;
+	left: 12rpx;
+	position: absolute;
+	color: white;
+	background-color: rgba(0, 0, 0, .4);
+	font-size: 18rpx;
+	display: flex;
+	padding: 6rpx;
+	border-radius: 10rpx;
+}
+
+.stu_tit image {
+	width: 25rpx;
+	height: 25rpx;
+}
+
+/* 时间线 */
+.sch-history {
+	width: 100%;
+}
+
+.history-list {
+	padding: 20rpx 50rpx;
+	box-sizing: border-box;
+}
+
+.history-item {
+	position: relative;
+	padding-bottom: 100rpx;
+	display: flex;
+}
+
+.history-item .date {
+	width: 120rpx;
+	color: #457eec;
+	font-size: 45rpx;
+}
+
+.history-item::before {
+	position: absolute;
+	top: 10rpx;
+	bottom: 10rpx;
+	left: 150rpx;
+	width: 5rpx;
+	background-color: #457eec;
+	content: "";
+}
+
+.history-item .dot {
+	position: relative;
+	bottom: 15rpx;
+	z-index: 1;
+	width: 10rpx;
+	height: 10rpx;
+	padding: 10rpx;
+	margin-top: 5rpx;
+	margin-left: 35rpx;
+	background-color: rgb(255, 255, 255);
+	border: 5rpx solid #457eec;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.history-item .des {
+	margin-left: 25rpx;
+}
+
+.history-item .des-title {
+	color: #457eec;
+	font-size: 50rpx;
+	font-weight: bold;
+}
+
+.history-item .des-del {
+	color: #707070;
+	width: 500rpx;
+	margin-top: 20rpx;
+}
+
+.sh-header {
+	width: 100%;
+	height: 120rpx;
+	border-bottom: 1rpx solid #cccccc;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10rpx 20rpx;
+	box-sizing: border-box;
+}
+
+.header-left {
+	font-weight: bold;
+	font-size: 40rpx;
+}
+
+.header-left::before {
+	width: 120rpx;
+	height: 120rpx;
+	/* margin-right: .08rem; */
+	background-repeat: no-repeat;
+	/* background-position: 50%; */
+	background-size: 100% 100%;
+	content: "";
+	background-image: url("https://assets-cdn.lanqb.com/imgv3_m/shome2211/shb-5-icon.png");
+}
+
+.header-right {
+	color: #707070;
+}
+
+.history-btn {
+	/* width: 100%; */
+	height: 80rpx;
+	margin: 50rpx 50rpx;
+	color: #fff;
+	font-size: 40rpx;
+	font-weight: 500;
+	line-height: 80rpx;
+	background-color: #457eec;
+	border-radius: 10rpx;
+	text-align: center;
+}

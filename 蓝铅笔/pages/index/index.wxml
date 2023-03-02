@@ -179,7 +179,7 @@
 						<!-- 作者的真.回复 -->
 						<view class="t-content">
 							{{item.answer_content[0].value}}
-							<text class="">APP内查看</text>
+							<text class="apps">APP内查看</text>
 						</view>
 					</view>
 				</view>
@@ -243,7 +243,7 @@
 		<!--  -->
 		<view style="margin-top: 15rpx; font-size: 20rpx;">
 			<view>
-				<image class="regulation" src="https://assets-cdn.lanqb.com/image/footer/footer-icon4@2x.png" mode=""/>
+				<image class="regulation" src="https://assets-cdn.lanqb.com/image/footer/footer-icon4@2x.png" mode="" />
 				浙公网安备33010602000717号
 			</view>
 		</view>

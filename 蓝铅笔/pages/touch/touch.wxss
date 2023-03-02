@@ -1,1 +1,241 @@
-/* pages/touch/touch.wxss */
+.main-layout {
+	height: 100%;
+	margin-top: 155rpx;
+}
+
+.layout {
+	min-height: 100%;
+	position: relative;
+	background-color: #f4f4f4;
+}
+
+.daniu-nav {
+	border-bottom: 1rpx solid #e6e6e6;
+}
+
+.daniu-nav view {
+	display: inline-block;
+	width: 33%;
+	box-sizing: border-box;
+	padding: 20rpx 0;
+	background-color: white;
+	text-align: center;
+	line-height: 70rpx;
+	color: #a5a5a5;
+	font-size: 37rpx;
+	position: relative;
+}
+
+.active {
+	color: #0395e4 !important;
+}
+
+.one {
+	position: absolute;
+	bottom: 0;
+	left: 37%;
+	width: 60rpx;
+	height: 10rpx;
+	background-color: #0395e4;
+	border-radius: 5rpx;
+}
+
+.dn-home-con {
+	box-sizing: border-box;
+	padding: 0 30rpx;
+}
+
+.dn-title .before {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 15rpx;
+	width: 15rpx;
+	height: 15rpx;
+	background-color: #edce8c;
+}
+
+.dn-title {
+	position: relative;
+	box-sizing: border-box;
+	font-size: 35rpx;
+	font-weight: bold;
+	margin-top: 50rpx;
+	margin-bottom: 30rpx;
+	padding-left: 20rpx;
+}
+
+.dn-title .after {
+	position: absolute;
+	top: -20rpx;
+	left: 160rpx;
+	width: 50rpx;
+	height: 30rpx;
+	background-image: url("https://assets-cdn.lanqb.com/imgv3/daniu/dn-new_m@2x.png");
+	background-size: 100% 100%;
+}
+
+.dn-course-item {
+	position: relative;
+}
+
+.cover {
+	width: 680rpx;
+	height: 450rpx;
+	background-color: black;
+	border-radius: 15rpx;
+}
+
+.ems {
+	position: absolute;
+	top: 10rpx;
+	left: 15rpx;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 22rpx;
+	color: white;
+	box-sizing: border-box;
+	padding: 0 15rpx;
+	line-height: 40rpx;
+	border-radius: 15rpx;
+}
+
+.des {
+	position: relative;
+	box-sizing: border-box;
+	padding: 20rpx 20rpx 40rpx 20rpx;
+	background-color: white;
+}
+
+.des .fonts {
+	font-size: 32rpx;
+	font-weight: bold;
+	margin-bottom: 10rpx;
+}
+
+.auther {
+	margin-bottom: 10rpx;
+}
+
+.auther .img {
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 50%;
+	vertical-align: top;
+}
+
+.auther .spans {
+	margin-left: 10rpx;
+	line-height: 60rpx;
+}
+
+.des .p {
+	color: #9f9f9f;
+	font-size: 28rpx;
+	line-height: 40rpx;
+}
+
+.des .dn-course-btn {
+	display: inline-block;
+	position: absolute;
+	bottom: 50rpx;
+	right: 20rpx;
+	width: 180rpx;
+	height: 70rpx;
+	line-height: 70rpx;
+	text-align: center;
+	border-radius: 30rpx;
+	background-image: linear-gradient(180deg, #f7e9c0, #edce8c);
+}
+
+.dn-titles .before {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 15rpx;
+	width: 15rpx;
+	height: 15rpx;
+	background-color: #edce8c;
+}
+
+.dn-titles {
+	position: relative;
+	box-sizing: border-box;
+	font-size: 35rpx;
+	font-weight: bold;
+	margin-top: 50rpx;
+	margin-bottom: 30rpx;
+	padding-left: 20rpx;
+}
+
+.dn-course {
+	padding: 20rpx;
+	display: flex;
+	margin-top: 20rpx;
+	background-color: white;
+	border-radius: 15rpx;
+
+}
+
+.covers {
+	display: inline-block;
+	position: relative;
+	width: 300rpx;
+	height: 220rpx;
+	background-color: red;
+	border-radius: 15rpx;
+}
+
+.covers .img {
+	width: 100%;
+	height: 100%;
+	border-radius: 15rpx;
+}
+
+.covers .em {
+	position: absolute;
+	top: 10rpx;
+	left: 10rpx;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 22rpx;
+	color: white;
+	box-sizing: border-box;
+	padding: 0 15rpx;
+	line-height: 40rpx;
+	border-radius: 15rpx;
+}
+
+.boxss .des {
+	display: inline-block;
+	width: 370rpx;
+	height: 220rpx;	
+	margin-left: 15rpx;
+}
+
+.boxss .des .h4 {
+	font-weight: bold;
+	font-size: 27rpx;
+	overflow: hidden;
+	margin-bottom: 10rpx;
+}
+
+.boxss .auther {
+	margin-bottom: 10rpx;
+}
+
+.boxss .auther .img {
+	width: 40rpx;
+	height: 40rpx;
+	vertical-align: top;
+}
+
+
+.boxss .auther .spans {
+	margin-left: 10rpx;
+	line-height: 40rpx;
+	font-size: 26rpx;
+}
+
+.boxss .p {
+	color: #9f9f9f;
+	font-size: 20rpx;
+}

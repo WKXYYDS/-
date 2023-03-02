@@ -1,8 +1,0 @@
-<view>
-  <!-- 头部 -->
-  <header></header>
-  <!-- 头部下面专业课 -->
-  <banner></banner>
-  <!-- 学画画 正当时 -->
-  <dkQnPV></dkQnPV>
-</view>

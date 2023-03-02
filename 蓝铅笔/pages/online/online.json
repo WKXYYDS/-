@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "header": "../../components/header/header",
-    "banner": "../../components/banner/banner",
-    "dkQnPV": "../../components/dkQnPV/dkQnPV"
-  }
-}

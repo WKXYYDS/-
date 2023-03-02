@@ -1,0 +1,210 @@
+<view class="all">
+	<title></title>
+	<!-- 顶部图片 -->
+	<view class="d_imgBox">
+		<!-- 顶部图片第一个盒子 -->
+		<view class="d_imgBoxOne">
+			<view class="card-item">
+				<image src="../../image/shb-1-img.png" mode="" />
+			</view>
+			<view class="card-item">
+				<image src="../../image/shb-2-img.png?v=221128" mode="" />
+			</view>
+		</view>
+
+		<!-- 顶部图片第二个盒子 -->
+		<view class="d_imgBoxTwo">
+			<view class="card-items">
+				<image src="../../image/shb-3-img.png" mode="" />
+			</view>
+			<view class="card-items">
+				<image src="../../image/shb-4-img.png" mode="" />
+			</view>
+		</view>
+	</view>
+
+	<!-- 八个按钮 -->
+	<view class="but_lists">
+		<view class="text_boxs" wx:for="{{btnList}}" wx:key="index">
+			<view class="item_boxs">
+				<image class="image_item" src="{{item.img}}" mode="" />
+
+			</view>
+			<view class="text_item">{{item.text}}</view>
+		</view>
+	</view>
+	<!-- 灰色横杠 -->
+	<view class="Horizontal"></view>
+
+	<!-- 热门推荐 -->
+	<view class="hot_tuijian">
+		<view class="hot_oneBox">
+			<!-- 左侧轮播图 -->
+			<view class="left_box">
+				<swiper autoplay="{{true}}" indicator-active-color="#FFFFFf" indicator-dots autoplay interval="{{2000}}" class="img_swiper">
+					<swiper-item class="img_item" wx:for="{{swiperImg}}" wx:key="index">
+						<image src="https://ss.lanqb.com/{{item.picture}}?imageView2/1/w/344/h/477" mode="" />
+						{{item.picture}}
+					</swiper-item>
+				</swiper>
+			</view>
+			<!-- 右侧热门数据 -->
+			<view class="right_box">
+				<!-- 标题 -->
+				<view class="right_tit">
+					<image src="../../image/shb-1-icon.png" mode="" />
+					<view class="hot_tuj">热门推荐</view>
+				</view>
+				<!-- 内容 -->
+				<view class="cont" wx:for="{{hotTuiJ}}" wx:key="index">
+					{{item.cont}}
+				</view>
+			</view>
+		</view>
+
+		<view class="hot_twoBox">
+			<view class="tit_box">
+				<!-- 标题 -->
+				<view class="right_tit">
+					<image src="../../image/shb-2-icon.png" mode="" />
+					<view class="hot_tuj">热门课程推荐</view>
+				</view>
+				<view class="more">更多></view>
+			</view>
+			<!-- 课程盒子 -->
+			<view class="course-list">
+				<view class="course-listBox" wx:for="{{tuJimg}}" wx:key="index">
+					<!-- 图片盒子 -->
+					<view class="img_boxImg">
+						<image src="https://ss.lanqb.com/{{item.posters.web}}?imageView2/1/w/400/h/253" mode="" />
+					</view>
+					<!-- title盒子 -->
+					<view class="text_box">
+						<image src="../../image/live-icon@2x.png" mode="" />
+						<view class="tite_con">{{item.title}}</view>
+					</view>
+					<!-- 作者盒子 -->
+					<view class="auther" wx:if="{{item.major_introduction.length <2}}">
+						<image src="{{item.major_introduction[0].avatar_src}}" mode="" />
+						<view class="auth_name">
+							{{item.major_introduction[0].nickname}}
+						</view>
+					</view>
+					<view class="auther" wx:if="{{item.major_introduction.length >1}}">
+						<view class="aunt_box">
+							<image src="{{item.major_introduction[0].avatar_src}}" mode="" />
+							<view class="auth_name">
+								{{item.major_introduction[0].nickname}}
+							</view>
+						</view>
+						<view class="aunt_box">
+							<image src="{{item.major_introduction[1].avatar_src}}" mode="" />
+							<view class="auth_name">
+								{{item.major_introduction[1].nickname}}
+							</view>
+						</view>
+
+					</view>
+					<!-- 底层 -->
+					<view class="dibu_tetx">
+						<view class="one_text">学习周期:{{item.period}}周</view>
+						<view class="two_text">
+							<view class="num_people">{{item.statistic.advisory}}</view> 人感兴趣
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<!-- 灰色横杠 -->
+	<view class="Horizontal"></view>
+
+	<!-- 主讲大咖老师 -->
+	<view class="teacher_know">
+		<!-- 标题 -->
+		<view class="teacher_tit">
+			<view class="right_tit">
+				<image src="../../image/shb-3-icon.png" mode="" />
+				<view class="hot_tuj">主讲大咖老师</view>
+			</view>
+			<view class="more">更多></view>
+		</view>
+
+		<!-- 老师 -->
+		<view class="teache_list">
+			<view class="teacher_box" wx:for="{{teachImg}}" wx:key="index">
+				<view class="teacher_box_img">
+					<image src="https://ss.lanqb.com/{{item.user.avatar}}?imageView2/1/w/190/h/190" mode="" />
+				</view>
+				<view class="text_teach">
+					{{item.nickname}}
+				</view>
+				<view class="text_teach color_yer">
+					行业经验:{{item.seniority}}年
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<!-- 灰色横杠 -->
+	<view class="Horizontal"></view>
+
+	<!-- 学员作品 -->
+	<view class="teacher_know">
+		<!-- 标题 -->
+		<view class="teacher_tit">
+			<view class="right_tit">
+				<image src="../../image/shb-4-icon.png" mode="" />
+				<view class="hot_tuj">学员作品展示</view>
+			</view>
+			<view class="more">更多></view>
+		</view>
+
+		<!-- 作品 -->
+		<view class="stu_show">
+			<view class="stu_box" wx:for="{{stu_shows}}" wx:key="index" wx:if="{{index <6 }}">
+				<image src="https://ss.lanqb.com/{{item.work_url}}?imageView2/1/w/330/h/420" mode="" />
+				<view class="stu_tit">
+					<image src="../../image/icon-work.png" mode="" /> 
+					一个月学习成果
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<!-- 灰色横杠 -->
+	<view class="Horizontal"></view>
+
+	<!-- 关于蓝铅笔 -->
+	<view class="teacher_know">
+		<!-- 标题 -->
+		<view class="teacher_tit">
+			<view class="right_tit">
+				<image src="../../image/shb-5-icon.png" mode="" />
+				<view class="hot_tuj">关于蓝铅笔</view>
+			</view>
+			<view class="more">更多></view>
+		</view>
+		<!--  -->
+		<view class="history-btn">
+			400万人与你同行 为什么选择蓝铅笔?
+		</view>
+		<view class="history-list">
+			<view class="history-item" wx:for="{{historyList}}" wx:key="index">
+				<view class="date">
+					{{item.date}}
+				</view>
+				<text class="dot"></text>
+				<view class="des">
+					<view class="des-title">
+						{{item.desTitle}}
+					</view>
+					<view class="des-del">
+						{{item.desDetail}}
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

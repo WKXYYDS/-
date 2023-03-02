@@ -2,10 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/course/course",
-    "pages/online/online",
+    "pages/school/school",
     "pages/touch/touch",
     "pages/user/user"
-
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -29,7 +28,7 @@
         "selectedIconPath": "./image/教程-1.jpg"
       },
       {
-        "pagePath": "pages/online/online",
+        "pagePath": "pages/school/school",
         "text": "网校",
         "iconPath": "./image/网校.jpg",
         "selectedIconPath": "./image/网校-1.jpg"
